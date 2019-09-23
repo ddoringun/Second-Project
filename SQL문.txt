@@ -1,0 +1,28 @@
+create database music DEFAULT CHARSET=utf8 COLLATE utf8_general_ci;
+
+create table mp3(
+num int(5) primary key auto_increment,
+title varchar(100),
+artist varchar(100),
+date varchar(15),
+genre varchar(100),
+views int(10)
+); 
+
+create table chart(
+title varchar(100),
+artist varchar(100),
+genre varchar(50),
+count varchar(10)
+);
+
+
+create table member(
+id varchar(20),
+pw varchar(20),
+name varchar(20),
+gender varchar(10),
+birth varchar(20),
+email varchar(50)
+);
+
